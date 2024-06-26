@@ -1,0 +1,449 @@
+* {
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.topo {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-topo {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px;
+    height: 40px;
+}
+
+.links-topo {
+    display: flex;
+    gap: 32px;
+    font-size: 15px;
+
+}
+
+.links-topo  a {
+    color: black;
+}
+
+.links-topo a:hover {
+    text-decoration: underline;
+}
+
+.barra-de-busca {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(240, 240, 240);
+    border-radius: 25px;
+    height: 30px;
+    padding: 5px;
+    width: 300px;
+}
+
+.barra-de-busca  i{
+    position: relative;
+    left: 5px;
+    cursor: pointer;
+}
+
+
+.icons {
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+
+}
+
+.icons .cor {
+    background-color:none;
+    padding: 8px;
+    width: 20px;
+    border-radius: 20px;
+}
+
+.icons .cor:hover {
+    background-color: rgba(150, 148, 155, 0.341);
+    padding: 8px;
+    width: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+.icons i {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.barra-de-busca  input{
+    height: 16px;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+   
+}
+
+
+
+
+.frete-sessao {
+    background-color: rgb(0, 0, 0);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#frete-texto {
+    color: rgb(255, 255, 255);
+    font-weight: lighter;
+    font-size:  14px;
+
+}
+
+.banner {
+    position: relative;
+}
+
+.banner-imagem {
+    height: 500px;
+    background-image: url(img/Lebron-Wallpaper.jpg);
+    background-position: 100% 15%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+}
+
+.banner-imagem::before {
+    content: '';
+    background-color: rgba(54, 46, 46, 0.583);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+}
+
+.banner-texto {
+    margin: 0;
+    color: white;
+    position: relative;
+    font-size: 30px;
+    top: 30px;
+    left: 300px;
+}
+
+.banner-texto-2 {
+    color: white;
+    position: relative;
+    font-size: 20px;
+    font-weight: lighter;
+    top: 30px;
+    left: 300px;
+    width: 60%;
+
+}
+
+.meio {
+    display: flex;
+    flex-direction: column;
+}
+
+#texto-meio-responsivo {
+    display: none;
+}
+
+.texto-meio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    background-color: black;
+}
+
+.texto-1-meio {
+    font-size: 14px;
+    color: white;
+}
+
+.texto-2-meio{
+   width: 30%;
+   text-align: center;
+   color: white;
+}
+
+
+.produtos {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 400px;
+    margin-right: 400px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.produto {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.produto a {
+    color: black;
+}
+.produto-base {
+    height: 230px;
+    width: 350px;
+    border-radius: 15px;
+    background-color: rgb(240, 240, 240);
+}
+
+.produto-imagem {
+    height: 230px;
+    border-radius: 15px;
+}
+
+
+.produto-nome {
+    display: flex;
+    justify-content: start;
+}
+
+.produto-nome {
+    font-size: 10px;
+    position: relative;
+    left: 10px;
+    bottom: 4px;
+}
+
+.produto-classe {
+    position: relative;
+    bottom: 9px;
+    left: 10px;
+    color: rgb(118, 116, 127);
+
+}
+
+.produto-preco {
+    position: relative;
+    bottom: 15px;
+    left: 10px;
+    font-size: 14px;
+}
+
+
+.rodape {
+    background-color: rgb(13, 13, 13);
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    color: white;
+}
+
+.rodape-cima {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 20px;
+    align-items: center;
+}
+
+.primeiro-rodape nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.segundo-rodape nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.terceiro-rodape nav {
+    display: flex;
+    flex-direction: column;
+}
+
+#texto-principal-rodape {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.link-rodape {
+    font-size: 14px;
+}
+
+.link-rodape a {
+    margin-bottom: 5px;
+    color: rgb(192, 192, 192);
+    margin-bottom: 10px;
+}
+
+.link-rodape a:hover {
+   color: white;
+}
+
+.icons-rede-social-rodape {
+    display: flex;
+    gap: 20px;
+    position: relative;
+    left: 15px;
+    margin-bottom: 30px;
+}
+
+.icons-forma-de-pagamento {
+    display: flex;
+    gap: 20px;
+    position: relative;
+    left: 15px;
+
+}
+
+.rodape-baixo {
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid white;
+    margin-top: 30px;
+    display: flex;
+    gap: 32px;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+
+.rodape-baixo .links-rodape-baixo{ 
+    display: flex;
+    gap: 10px;
+}
+
+.links-rodape-baixo a {
+    color: rgb(192, 192, 192);
+}
+.links-rodape-baixo a:hover {
+    color: rgb(255, 255, 255);
+}
+
+.rodape-baixo-partefinal {
+    width: 40%;
+    justify-content: flex-end;
+    display: flex;
+    color: rgb(192, 192, 192);
+}
+
+/*
+RESPONSIVE
+
+*/
+@media (max-width: 769px) {
+
+    .menu-topo {
+        height: 100px;
+        gap: 20px;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    .menu-topo .links-topo{
+        display: none;
+    }
+
+    .barra-de-busca {
+        width: 100%;
+    }
+
+    .barra-de-busca input {
+        width: 100%;
+    }
+
+    .banner {
+      display: none;
+    }
+    .banner-imagem {
+        height: 300px;
+        margin: 0;
+        padding: 0;
+        background-image: 100px;
+        width: 100%;
+        background-position: 100% 40%;
+        display: flex;
+    }
+
+    .banner-imagem::before {
+       display: none;
+    }
+
+    .banner-texto, .banner-texto-2 {
+        font-size: 18px;
+        left: 20px;
+        
+    }
+
+    .produto-base {
+     height: 125px;
+     width:  190px;
+      
+
+    }
+
+    .produto-nome {
+        font-size: 9px;
+
+    }
+
+    .produto-imagem {
+        height: 130px;
+        border-radius: 15px;
+    }
+    .produto-preco {
+        font-size: 12px;
+    }
+    
+    .texto-meio {
+       display: none;
+    }
+
+    .texto-responsivo {
+        background-color: black;
+        
+    }
+
+    #texto-meio-responsivo {
+        display: block;
+        font-size: 16px;
+        color: #ffffff;
+        padding: 10px;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    .rodape {
+        height: 400px
+    }
+
+}
+
